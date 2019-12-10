@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>CRYPTOSCARF</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reset.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/erin.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Cryptoscarf</h1><p>
+					<h2>How to solve it</h2><p>
+					<h4>Erin Browning</h4>
+				</section>
+				<section>
+					Slides will be available on Twitter @efrowning
+				</section>
+				<section>
+					<section>
+						<h3>$whoami</h3>
+					</section>
+					<section>
+						Erin Browning<p>
+						Senior Security Engineer<p>
+						a.k.a., I'm a hacker
+					</section>
+					<section>
+						You can contact me at:<p>
+						<a href="mailto:erin@frowning.wtf">erin@frowning.wtf</a><p>
+						<a href="https://www.twitter.com/efrowning">@efrowning</a>
+					</section>
+				</section>
+				<section>
+					The cryptoscarf started when I met @fbz at Blackhoodie in April of this year.
+				</section>
+				<section>
+					What kind of crypto can I do that'll fit in a scarf?
+				</section>
+				<section>
+					Idea 1: knits + purls for each bit
+				</section>
+				<section>
+					Idea 2: colored blobs
+				</section>
+				<section>
+					Idea 3: QR codes?
+				</section>
+				<section>
+					How much data can I fit in a scannable, knitted QR code?
+				</section>
+				<section>
+					Decided on RC4 for the cryptography:<br>
+					<ul>
+						<li>Short messages are vulnerable to repeated key attacks</li>
+						<li>Famous for WEP and TLS vulnerabilities</li>
+					</ul>
+				</section>
+				<section>
+					Solution
+				</section>
+				<section>
+					First of all, can you even XOR?
+				</section>
+				<section>
+					<img src="./media/xor.png">
+				</section>
+				<section>
+					<img src="./media/xor-ex.png">
+				</section>
+				<section>
+					<img src="./media/xor-venn.png">
+				</section>
+				<section>
+					<img src="./media/twitter.png">
+				</section>
+				<section>
+					<img src="./media/rc4.png">
+				</section>
+				<section>
+					<img src="./media/repeated-key.png">
+				</section>
+				<section>
+					<img src="./media/dict.PNG">
+				</section>
+				<section>
+					<img src="./media/goose.jpeg"><br>
+					see you on the internet
+				</section>
+			</div>
+		</div>
+
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true }
+				]
+			});
+			Reveal.configure({ slideNumber: true },
+				{ slideNumber: 'c/t' });
+		</script>
+	</body>
+</html>
